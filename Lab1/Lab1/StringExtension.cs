@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab1
+{
+    public static class StringExtension
+    {
+        public static string[] ComputeWords(this string sentence)
+        {
+            return sentence.Split(" ");
+        }
+    }
+}
