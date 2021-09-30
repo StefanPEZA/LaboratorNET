@@ -20,8 +20,10 @@ namespace Lab1
             return (EndDate - StartDate) > TimeSpan.Zero;
         }
 
-        /* Am folosit abstract deoarece metoda Salutation ar trebui implementata
-         * de fiecare subclasa (Manager, Architect). 
+        /* Am ales abstract deoarece ne-am dorit ca metoda Salutation sa fie implementată obligatoriu de fiecare clasă Manager si Arhitect.
+         * N-ar trebui sa existe un Employee fara o functie bine definita.
+         * Daca am fi ales virtual puteam sa implementam un comportament implicit metodei, ex: return "Hello employee", 
+         * dar în cele două clase derivate din Employee nu mai era nevoie sa fie implementată.
          */
         public abstract String Salutation();
     }

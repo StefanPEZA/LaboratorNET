@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\stefa\\.nuget\\packages\\": {}
+    "C:\\Users\\gigib\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\LaboratorNET\\Lab1\\Lab1\\Lab1.csproj",
+      "projectUniqueName": "D:\\LaboratorNET\\Lab1\\Lab1\\Lab1.csproj",
       "projectName": "Lab1",
-      "projectPath": "E:\\LaboratorNET\\Lab1\\Lab1\\Lab1.csproj",
-      "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-      "outputPath": "E:\\LaboratorNET\\Lab1\\Lab1\\obj\\",
+      "projectPath": "D:\\LaboratorNET\\Lab1\\Lab1\\Lab1.csproj",
+      "packagesPath": "C:\\Users\\gigib\\.nuget\\packages\\",
+      "outputPath": "D:\\LaboratorNET\\Lab1\\Lab1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gigib\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
