@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Weather
 {
@@ -6,7 +7,8 @@ namespace Weather
     {
         static void Main(string[] args)
         {
-            
+            DataParser parser = new DataParser(@"E:\LaboratorNET\Lab2\Weather\weather.dat");
+            parser.ParseFile();
         }
     }
 }
