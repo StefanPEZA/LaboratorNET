@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3OO1i4sIJZM3nGFs9YMgyXYehuGT9Bk23hvA+XBJJ1BRjCrkY4SN5BGEvaFa4ztudbaY2khrVW92Q221cQvETQ==",
+  "dgSpecHash": "WXzyzlnA0qrmou+dUIekXK1h1zkWm/CKQP9XmAOIwhKGjERvaQucAGjpz6eEKcaf3S/CoF+jsZdBYXfKPumrvw==",
   "success": true,
-  "projectFilePath": "D:\\LaboratorNET\\Lab2\\Lab2\\Lab2.csproj",
+  "projectFilePath": "D:\\LaboratorNET\\Lab2\\Lab2\\Weather.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

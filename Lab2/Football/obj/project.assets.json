@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LaboratorNET\\Lab2\\Lab2\\Weather.csproj",
-      "projectName": "Weather",
-      "projectPath": "D:\\LaboratorNET\\Lab2\\Lab2\\Weather.csproj",
+      "projectUniqueName": "D:\\LaboratorNET\\Lab2\\Football\\Football.csproj",
+      "projectName": "Football",
+      "projectPath": "D:\\LaboratorNET\\Lab2\\Football\\Football.csproj",
       "packagesPath": "C:\\Users\\gigib\\.nuget\\packages\\",
-      "outputPath": "D:\\LaboratorNET\\Lab2\\Lab2\\obj\\",
+      "outputPath": "D:\\LaboratorNET\\Lab2\\Football\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gigib\\AppData\\Roaming\\NuGet\\NuGet.Config",
