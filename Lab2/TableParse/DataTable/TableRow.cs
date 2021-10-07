@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TableParse
 {
-    class TableRow
+    public class TableRow
     {
         public int Count { get; private set; }
         List<string> rowCells = new List<string>();

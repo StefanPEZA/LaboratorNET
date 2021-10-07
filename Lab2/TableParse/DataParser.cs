@@ -7,7 +7,7 @@ using System.IO;
 
 namespace TableParse
 {
-    class DataParser
+    public class DataParser
     {
         private string filePath;
 
