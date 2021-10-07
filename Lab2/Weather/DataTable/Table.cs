@@ -34,6 +34,20 @@ namespace Weather
         }
 
 
-        //public double getMin(int headerIndex, int firstIndex, int secondIndex);
+        public string getMin(int headerIndex, int firstIndex, int secondIndex) 
+        {
+            double minDif = Math.Abs(Convert.ToDouble(tableRows[0].Get(firstIndex)) - Convert.ToDouble(tableRows[0].Get(secondIndex)));
+            string minVal = tableRows[0].Get(headerIndex);
+            foreach (TableRow row in tableRows)
+            {
+                double currentDif = Math.Abs(Convert.ToDouble(row.Get(firstIndex)) - Convert.ToDouble(row.Get(secondIndex)));
+                if (currentDif < minDif)
+                {
+                    minDif = currentDif;
+                    minVal = row.Get(headerIndex);
+                }
+            }
+            return minVal;
+        }
     }
 }
