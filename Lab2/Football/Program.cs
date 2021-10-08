@@ -1,4 +1,6 @@
 ﻿using System;
+using TableParse.DataTable;
+using TableParse;
 
 namespace Football
 {
@@ -6,7 +8,9 @@ namespace Football
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DataParser data = new DataParser(@"E:\LaboratorNET\Lab2\Football\football.dat");
+            Table table = data.ParseFile(9);
+            Console.WriteLine(table.GetMin(1, 6, 8));
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using TableParse.DataTable;
 using TableParse;
 
 namespace Weather
@@ -10,7 +10,7 @@ namespace Weather
         {
             DataParser parser = new DataParser(@"E:\LaboratorNET\Lab2\Weather\weather.dat");
             Table table = parser.ParseFile(3);
-            Console.WriteLine( table.getMin(0, 1, 2)); 
+            Console.WriteLine( table.GetMin(0, 1, 2)); 
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TableParse
+namespace TableParse.DataTable
 {
     public class TableRow
     {
@@ -24,7 +24,7 @@ namespace TableParse
 
         public string Get(int index)
         {
-            if (index < 0 || index > this.Count)
+            if (index < 0 || index >= this.Count)
             {
                 return null;
             }
@@ -34,6 +34,18 @@ namespace TableParse
         public List<string> Cells()
         {
             return rowCells;
+        }
+
+        public override string ToString()
+        {
+            String str = String.Empty;
+            foreach (string cell in this.rowCells)
+            {
+                str += cell + " / ";
+            }
+            str += "\n";
+
+            return str.ToString();
         }
     }
 }

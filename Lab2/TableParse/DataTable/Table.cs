@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TableParse
+namespace TableParse.DataTable
 {
     public class Table
     {
@@ -34,13 +32,13 @@ namespace TableParse
         }
 
 
-        public string getMin(int headerIndex, int firstIndex, int secondIndex) 
+        public string GetMin(int headerIndex, int firstIndex, int secondIndex) 
         {
-            double minDif = Math.Abs(Convert.ToDouble(tableRows[0].Get(firstIndex)) - Convert.ToDouble(tableRows[0].Get(secondIndex)));
-            string minVal = tableRows[0].Get(headerIndex);
+            double minDif = 9999;
+            string minVal = tableRows.ElementAt(0).Get(headerIndex);
             foreach (TableRow row in tableRows)
             {
-                double currentDif = Math.Abs(Convert.ToDouble(row.Get(firstIndex)) - Convert.ToDouble(row.Get(secondIndex)));
+                double currentDif = Math.Abs(DataParser.ToDouble(row.Get(firstIndex)) - DataParser.ToDouble(row.Get(secondIndex)));
                 if (currentDif < minDif)
                 {
                     minDif = currentDif;
@@ -48,6 +46,18 @@ namespace TableParse
                 }
             }
             return minVal;
+        }
+
+        public override string ToString()
+        {
+            String str = String.Empty;
+
+            foreach (TableRow line in this.tableRows)
+            {
+                str += line.ToString() + "\n";
+            }
+
+            return str.ToString();
         }
     }
 }
