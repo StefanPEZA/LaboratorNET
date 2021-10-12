@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace TSP.NET.L3.Refactored
 {
-    class CardPayment
+    class CardPayment : PaymentModel
     {
+        public override void BuyTicket(TicketDetails ticket, Action onPayChangeToMobilePhone)
+        {
+            
+        }
     }
 }
