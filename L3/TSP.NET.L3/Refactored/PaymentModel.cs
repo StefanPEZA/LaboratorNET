@@ -3,14 +3,15 @@
 namespace TSP.NET.L3
 {
 
-    public class PaymentMode
+    public abstract class PaymentModel
     {
+
+
         private decimal _cashAccepted;
 
-        public void BuyTicket(TicketDetails ticket,
-                              PaymentDetails payment, Action onPayChangeToMobilePhone)
-        {
-            if (payment.Method == PaymentMethod.CreditCard)
+        public abstract void BuyTicket(TicketDetails ticket, Action onPayChangeToMobilePhone);
+        
+            /*if (payment.Method == PaymentMethod.CreditCard)
             {
                 ChargeCard(ticket, payment);
             }
@@ -18,8 +19,8 @@ namespace TSP.NET.L3
             {
                 AcceptCash(ticket);
                 DispenseChange(ticket, onPayChangeToMobilePhone);
-            }
-        }
+            }*/
+        
 
         private void ChargeCard(TicketDetails ticket, PaymentDetails payment)
         {
@@ -46,7 +47,7 @@ namespace TSP.NET.L3
         }
     }
 
-    internal class ProcessingCenterGateway1
+    internal class ProcessingCenterGateway
     {
         public void Charge(decimal ticketPrice, PaymentDetails paymentDetails)
         {
