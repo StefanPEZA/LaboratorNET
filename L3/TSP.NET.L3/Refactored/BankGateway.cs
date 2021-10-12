@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace TSP.NET.L3.Refactored
 {
-    interface ICanOperateWithCash
+    class BankGateway
     {
-        abstract void AcceptCash(TicketDetails ticket);
+        public void Charge(decimal ticketPrice)
+        {
+            //charging process
+        }
     }
 }

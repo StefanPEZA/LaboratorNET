@@ -8,6 +8,6 @@ namespace TSP.NET.L3.Refactored
 {
     interface ICanPayViaCreditCard
     {
-        abstract void AcceptCash(TicketDetails ticket);
+        abstract void ChargeCard(TicketDetails ticket);
     }
 }

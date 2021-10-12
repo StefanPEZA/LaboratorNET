@@ -23,7 +23,7 @@ namespace TSP.NET.L3
 
         private void ChargeCard(TicketDetails ticket, PaymentDetails payment)
         {
-            var gateway = new ProcessingCenterGateway();
+            var gateway = new ProcessingCenterGateway1();
             gateway.Charge(ticket.Price, payment);
         }
 
