@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TSP.NET.L3.Refactored
 {
-    class CashPayment : PaymentModel, ICanOperateWithCash
+    public class CashPayment : PaymentModel, ICanOperateWithCash
     {
 
         private decimal _cashAccepted;
